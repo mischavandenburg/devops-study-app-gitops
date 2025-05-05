@@ -7,10 +7,10 @@ resources:
   - frontend
 
 namespace: study-app
-namePrefix: prod
+namePrefix: prod-
 
 images:
   - name: ghcr.io/mischavandenburg/study-app-api
-    newTag: backend-v0.2.0
+    newTag: backend-v0.3.0
   - name: ghcr.io/mischavandenburg/study-app-web
     newTag: frontend-v0.1.0
