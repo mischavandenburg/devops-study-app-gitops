@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: backend:latest
+          image: ghcr.io/mischavandenburg/study-app-api:latest
           ports:
             - containerPort: 22112
           resources:

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: frontend:latest
+          image: ghcr.io/mischavandenburg/study-app-web:latest
           ports:
             - containerPort: 22111
           env:
@@ -27,4 +27,3 @@ spec:
             requests:
               cpu: "100m"
               memory: "128Mi"
-
