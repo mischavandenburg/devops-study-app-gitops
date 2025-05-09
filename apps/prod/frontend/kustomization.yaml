@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   - ../../base/frontend
 
-# Patch for the frontend deployment
 patches:
   - target:
       kind: Deployment
@@ -18,3 +17,11 @@ patches:
             value: "true"
           - name: API_URL
             value: "http://prod-backend:22112"
+
+  - target:
+      kind: Service
+      name: frontend
+    patch: |-
+      - op: replace
+        path: /spec/type
+        value: ClusterIP
